@@ -85,24 +85,24 @@ Määrittelevät API-reitit.
 
 ### Opiskelijat
 
--GET ..../api/opiskelijat 
--POST ..../api/opiskelijat 
--PUT ..../api/opiskelijat/:id 
--DELETE ..../api/opiskelijat/:id 
+- GET ..../api/opiskelijat 
+- POST ..../api/opiskelijat 
+- PUT ..../api/opiskelijat/:id 
+- DELETE ..../api/opiskelijat/:id 
 
 ### Opintojaksot
 
--GET ..../api/opintojaksot 
--POST ..../api/opintojaksot 
--PUT  ..../api/opintojaksot/:id 
--DELETE ..../api/opintojaksot/:id 
+- GET ..../api/opintojaksot 
+- POST ..../api/opintojaksot 
+- PUT  ..../api/opintojaksot/:id 
+- DELETE ..../api/opintojaksot/:id 
 
 ### Arvioinnit
 
--GET ..../api/arvioinnit 
--POST ..../api/arvioinnit 
--PUT  ..../api/arvioinnit/:id 
--DELETE ..../api/arvioinnit/:id 
+- GET ..../api/arvioinnit 
+- POST ..../api/arvioinnit 
+- PUT  ..../api/arvioinnit/:id 
+- DELETE ..../api/arvioinnit/:id 
 
 ### Kirjautuminen
 POST ..../api/login
