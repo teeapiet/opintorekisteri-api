@@ -21,7 +21,7 @@ Arviointi: arviointi_id, opiskelija_id, opintojakso_id, arvosana
 
 User: user_id, username, password
 
-MySQL Workbenchissä tehtystä EER-diagrammista löytyy kuva projektikansiosta.
+MySQL Workbenchissä tehdystä EER-diagrammista löytyy kuva --> eerdiagram.png
 
 
 ### Models
@@ -104,7 +104,7 @@ Testatut toiminnot:
 - JWT-autentikointi
 - Suojatut reitit
 
-Kaikki testit suoritettiin onnistuneesti.
+Kaikki testit onnistui.
 
 
 ## Esittelyvideo
