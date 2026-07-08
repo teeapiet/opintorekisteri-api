@@ -1,14 +1,12 @@
-# Opintorekisteri API
+## Opintorekisteri API
 Teea Pietikäinen 
 TVT26KMO
-
-# Projektin kuvaus
 
 Tämän harjoitustyön tarkoituksena oli toteuttaa Node.js-, Express- ja MySQL-teknologioita käyttävä REST-rajapinta opintorekisterille MVC-arkkitehtuuria hyödyntäen.
 
 Sovelluksella voidaan hallita opiskelijoita, opintojaksoja ja arviointeja CRUD-operaatioiden avulla.
 
-Projektissa käytettiin:
+Käytin:
 
 - Node.js
 - Express
@@ -25,7 +23,7 @@ http://localhost:3000
 /api/opintojaksot
 /api/login
 
-# Tietokanta
+### Tietokanta
 Sisältää nejä taulua:
 
 Opiskelija
@@ -57,7 +55,7 @@ User
 EER-diagrammista löytyy kuva projektikansiosta.
 
 
-# Models
+### Models
 
 Sisältävät tietokantakyselyt.
 
@@ -66,7 +64,7 @@ Sisältävät tietokantakyselyt.
 - arviointiModel.js
 - userModel.js
 
-# Controllers
+### Controllers
 
 Käsittelevät HTTP-pyynnöt ja palauttavat vastaukset.
 
@@ -75,7 +73,7 @@ Käsittelevät HTTP-pyynnöt ja palauttavat vastaukset.
 - arviointiController.js
 - loginController.js
 
-# Routes
+### Routes
 
 Määrittelevät API-reitit.
 
@@ -85,40 +83,40 @@ Määrittelevät API-reitit.
 - loginRoutes.js
 
 
-# Opiskelijat
+### Opiskelijat
 
-| GET | ..../api/opiskelijat |
-| POST | ..../api/opiskelijat |
-| PUT | ..../api/opiskelijat/:id |
-| DELETE | ..../api/opiskelijat/:id |
+GET ..../api/opiskelijat 
+POST ..../api/opiskelijat 
+PUT ..../api/opiskelijat/:id 
+DELETE ..../api/opiskelijat/:id 
 
-# Opintojaksot
+### Opintojaksot
 
-| GET | ..../api/opintojaksot |
-| POST | ..../api/opintojaksot |
-| PUT | ..../api/opintojaksot/:id |
-| DELETE | ..../api/opintojaksot/:id |
+GET ..../api/opintojaksot 
+POST ..../api/opintojaksot 
+PUT  ..../api/opintojaksot/:id 
+DELETE ..../api/opintojaksot/:id 
 
-# Arvioinnit
+### Arvioinnit
 
-| GET | ..../api/arvioinnit |
-| POST | ..../api/arvioinnit |
-| PUT | ..../api/arvioinnit/:id |
-| DELETE | ..../api/arvioinnit/:id |
+GET ..../api/arvioinnit 
+POST ..../api/arvioinnit 
+PUT  ..../api/arvioinnit/:id 
+DELETE ..../api/arvioinnit/:id 
 
-# Kirjautuminen
+### Kirjautuminen
 POST ..../api/login
 
 json
 {
   "username": "____",
-  "password": "_______"
+  "password: "_____"
 }
 
 Kirjautumisen jälkeen palvelin palauttaa JWT-tokenin, jota käytetään suojattujen reittien käyttöön.
 
 
-# MySQL-aliohjelma
+### MySQL-aliohjelma
 
 Tietokanta sisältää MySQL Stored Procedure -aliohjelman.
 Aliohjelmaa voidaan kutsua SQL-komennolla: CALL LaskeKeskiarvo(1);
@@ -126,7 +124,7 @@ Aliohjelmaa voidaan kutsua SQL-komennolla: CALL LaskeKeskiarvo(1);
 Aliohjelma palauttaa opiskelijan arvosanojen keskiarvon.
 
 
-# Testaus
+### Testaus
 
 Testaus Postmanilla.
 Testatut toiminnot:
@@ -140,6 +138,6 @@ Testatut toiminnot:
 Kaikki testit suoritettiin onnistuneesti.
 
 
-# Esittelyvideo
-
+## Esittelyvideo
+https://youtu.be/n75S4ZwzSVw
 
