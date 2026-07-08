@@ -19,10 +19,11 @@ Projektissa käytettiin seuraavia teknologioita:
 - MySQL Workbench
 - Visual Studio Code
 
-http://localhost:3000/api/opiskelijat
-http://localhost:3000/api/arvioinnit
-http://localhost:3000/api/opintojaksot
-http://localhost:3000/api/login
+http://localhost:3000
+/api/opiskelijat
+/api/arvioinnit
+/api/opintojaksot
+/api/login
 
 Tietokanta sisältää neljä taulua:
 
@@ -85,27 +86,27 @@ Määrittelevät API-reitit.
 
 # Opiskelijat
 
-| GET | http://localhost:3000/api/opiskelijat |
-| POST | http://localhost:3000/api/opiskelijat |
-| PUT | http://localhost:3000/api/opiskelijat/:id |
-| DELETE | http://localhost:3000/api/opiskelijat/:id |
+| GET | ..../api/opiskelijat |
+| POST | ..../api/opiskelijat |
+| PUT | ..../api/opiskelijat/:id |
+| DELETE | ..../api/opiskelijat/:id |
 
 # Opintojaksot
 
-| GET | http://localhost:3000/api/opintojaksot |
-| POST | http://localhost:3000/api/opintojaksot |
-| PUT | http://localhost:3000/api/opintojaksot/:id |
-| DELETE | http://localhost:3000/api/opintojaksot/:id |
+| GET | ..../api/opintojaksot |
+| POST | ..../api/opintojaksot |
+| PUT | ..../api/opintojaksot/:id |
+| DELETE | ..../api/opintojaksot/:id |
 
 # Arvioinnit
 
-| GET | /api/arvioinnit |
-| POST | /api/arvioinnit |
-| PUT | /api/arvioinnit/:id |
-| DELETE | /api/arvioinnit/:id |
+| GET | ..../api/arvioinnit |
+| POST | ..../api/arvioinnit |
+| PUT | ..../api/arvioinnit/:id |
+| DELETE | ..../api/arvioinnit/:id |
 
 # Kirjautuminen
-POST http://localhost:3000/api/login
+POST ..../api/login
 
 json
 {
