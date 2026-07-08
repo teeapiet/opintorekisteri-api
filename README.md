@@ -6,53 +6,22 @@ Tämän harjoitustyön tarkoituksena oli toteuttaa Node.js-, Express- ja MySQL-t
 
 Sovelluksella voidaan hallita opiskelijoita, opintojaksoja ja arviointeja CRUD-operaatioiden avulla.
 
-Käytin:
+Käytin: Node.js, Express, MySQL, JWT, bcrypt, Postman, MySQL Workbench, Visual Studio Code
 
-- Node.js
-- Express
-- MySQL
-- JWT
-- bcrypt
-- Postman
-- MySQL Workbench
-- Visual Studio Code
-
-http://localhost:3000
-/api/opiskelijat
-/api/arvioinnit
-/api/opintojaksot
-/api/login
+http://localhost:3000/api/opiskelijat, /api/arvioinnit, /api/opintojaksot, /api/login
 
 ### Tietokanta
 Sisältää nejä taulua:
 
-Opiskelija
+Opiskelija: opiskelija_id, etunimi, sukunimi, sahkoposti
 
-- opiskelija_id
-- etunimi
-- sukunimi
-- sahkoposti
+Opintojakso: opintojakso_id, nimi, laajuus
 
-Opintojakso
+Arviointi: arviointi_id, opiskelija_id, opintojakso_id, arvosana
 
-- opintojakso_id
-- nimi
-- laajuus
+User: user_id, username, password
 
-Arviointi
-
-- arviointi_id
-- opiskelija_id
-- opintojakso_id
-- arvosana
-
-User
-
-- user_id
-- username
-- password
-
-EER-diagrammista löytyy kuva projektikansiosta.
+MySQL Workbenchissä tehtystä EER-diagrammista löytyy kuva projektikansiosta.
 
 
 ### Models
@@ -119,7 +88,7 @@ Kirjautumisen jälkeen palvelin palauttaa JWT-tokenin, jota käytetään suojatt
 ### MySQL-aliohjelma
 
 Tietokanta sisältää MySQL Stored Procedure -aliohjelman.
-Aliohjelmaa voidaan kutsua SQL-komennolla: CALL LaskeKeskiarvo(1);
+Aliohjelmaa kutsutaan komennolla: CALL LaskeKeskiarvo(1);
 
 Aliohjelma palauttaa opiskelijan arvosanojen keskiarvon.
 
