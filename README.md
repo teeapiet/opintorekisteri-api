@@ -2,13 +2,13 @@
 Teea Pietikäinen 
 TVT26KMO
 
-## Projektin kuvaus
+# Projektin kuvaus
 
 Tämän harjoitustyön tarkoituksena oli toteuttaa Node.js-, Express- ja MySQL-teknologioita käyttävä REST-rajapinta opintorekisterille MVC-arkkitehtuuria hyödyntäen.
 
 Sovelluksella voidaan hallita opiskelijoita, opintojaksoja ja arviointeja CRUD-operaatioiden avulla.
 
-Projektissa käytettiin seuraavia teknologioita:
+Projektissa käytettiin:
 
 - Node.js
 - Express
@@ -25,29 +25,30 @@ http://localhost:3000
 /api/opintojaksot
 /api/login
 
-Tietokanta sisältää neljä taulua:
+# Tietokanta
+Sisältää nejä taulua:
 
-# Opiskelija
+Opiskelija
 
 - opiskelija_id
 - etunimi
 - sukunimi
 - sahkoposti
 
-# Opintojakso
+Opintojakso
 
 - opintojakso_id
 - nimi
 - laajuus
 
-# Arviointi
+Arviointi
 
 - arviointi_id
 - opiskelija_id
 - opintojakso_id
 - arvosana
 
-# User
+User
 
 - user_id
 - username
