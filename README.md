@@ -2,8 +2,6 @@
 Teea Pietikäinen 
 TVT26KMO
 
-Tämän harjoitustyön tarkoituksena oli toteuttaa Node.js-, Express- ja MySQL-teknologioita käyttävä REST-rajapinta opintorekisterille MVC-arkkitehtuuria hyödyntäen.
-
 Sovelluksella voidaan hallita opiskelijoita, opintojaksoja ja arviointeja CRUD-operaatioiden avulla.
 
 Käytin: Node.js, Express, MySQL, JWT, bcrypt, Postman, MySQL Workbench, Visual Studio Code
@@ -24,7 +22,7 @@ User: user_id, username, password
 MySQL Workbenchissä tehdystä EER-diagrammista löytyy kuva --> eerdiagram.png
 
 
-### Models
+#### Models
 
 Sisältävät tietokantakyselyt.
 
@@ -33,7 +31,7 @@ Sisältävät tietokantakyselyt.
 - arviointiModel.js
 - userModel.js
 
-### Controllers
+#### Controllers
 
 Käsittelevät HTTP-pyynnöt ja palauttavat vastaukset.
 
@@ -42,7 +40,7 @@ Käsittelevät HTTP-pyynnöt ja palauttavat vastaukset.
 - arviointiController.js
 - loginController.js
 
-### Routes
+#### Routes
 
 Määrittelevät API-reitit.
 
@@ -52,28 +50,28 @@ Määrittelevät API-reitit.
 - loginRoutes.js
 
 
-### Opiskelijat
+#### Opiskelijat
 
 - GET ..../api/opiskelijat 
 - POST ..../api/opiskelijat 
 - PUT ..../api/opiskelijat/:id 
 - DELETE ..../api/opiskelijat/:id 
 
-### Opintojaksot
+#### Opintojaksot
 
 - GET ..../api/opintojaksot 
 - POST ..../api/opintojaksot 
 - PUT  ..../api/opintojaksot/:id 
 - DELETE ..../api/opintojaksot/:id 
 
-### Arvioinnit
+#### Arvioinnit
 
 - GET ..../api/arvioinnit 
 - POST ..../api/arvioinnit 
 - PUT  ..../api/arvioinnit/:id 
 - DELETE ..../api/arvioinnit/:id 
 
-### Kirjautuminen
+#### Kirjautuminen
 POST ..../api/login
 
 json
@@ -85,7 +83,7 @@ json
 Kirjautumisen jälkeen palvelin palauttaa JWT-tokenin, jota käytetään suojattujen reittien käyttöön.
 
 
-### MySQL-aliohjelma
+#### MySQL-aliohjelma
 
 Tietokanta sisältää MySQL Stored Procedure -aliohjelman.
 Aliohjelmaa kutsutaan komennolla: CALL LaskeKeskiarvo(1);
@@ -93,7 +91,7 @@ Aliohjelmaa kutsutaan komennolla: CALL LaskeKeskiarvo(1);
 Aliohjelma palauttaa opiskelijan arvosanojen keskiarvon.
 
 
-### Testaus
+#### Testaus
 
 Testaus Postmanilla.
 Testatut toiminnot:
@@ -107,7 +105,7 @@ Testatut toiminnot:
 Kaikki testit onnistui.
 
 
-## Esittelyvideo
+### Esittelyvideo
 https://youtu.be/n75S4ZwzSVw
 Koska videolla en kerennyt näyttämään kaikkea, löytyy vielä kuvakaappaukset jokaisesta onnistuneesta postman testauksesta tiedostosta opintorekisteri2.pdf
 
