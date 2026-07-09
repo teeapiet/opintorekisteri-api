@@ -86,7 +86,7 @@ Kirjautumisen jälkeen palvelin palauttaa JWT-tokenin, jota käytetään suojatt
 #### MySQL-aliohjelma
 
 Tietokanta sisältää MySQL Stored Procedure -aliohjelman.
-Aliohjelmaa kutsutaan komennolla: CALL LaskeKeskiarvo(1);
+Aliohjelmaa kutsutaan komennolla: CALL LaskeKeskiarvo(opiskelija_id);
 
 Aliohjelma palauttaa opiskelijan arvosanojen keskiarvon.
 
