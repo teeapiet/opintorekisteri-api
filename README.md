@@ -109,4 +109,5 @@ Kaikki testit onnistui.
 
 ## Esittelyvideo
 https://youtu.be/n75S4ZwzSVw
+Koska videolla en kerennyt näyttämään kaikkea, löytyy vielä kuvakaappaukset jokaisesta onnistuneesta postman testauksesta tiedostosta opintorekisteri2.pdf
 
